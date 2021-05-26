@@ -125,7 +125,7 @@ button:hover {
         line-height: 1.5;
     }
     .content p {
-        text-align: center;
+        text-align:start;
         max-width: 600px;
         letter-spacing: 1.6px;
     }
