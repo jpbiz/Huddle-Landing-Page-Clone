@@ -1,7 +1,7 @@
 body {
     background-image: url("bg-desktop.svg");
     background-color: hsl(257, 40%, 49%);
-    padding: 50px 50px 35px 80px;
+    padding: 30px 50px 35px 60px;
 }
 
 .container {
@@ -9,7 +9,7 @@ body {
     width: 1440px;
     color: white;
     grid-template-columns: [col-start] 1fr [col-2] 1fr [col-end];
-    grid-template-rows: 90px 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
     grid-template-areas: 
     "logo logo"
     "illustration content"
@@ -88,3 +88,4 @@ button:hover {
     color: hsl(300, 69%, 71%);
     border-color: hsl(300, 69%, 71%);
   }
+  
