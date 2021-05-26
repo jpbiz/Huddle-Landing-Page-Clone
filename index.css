@@ -1,0 +1,90 @@
+body {
+    background-image: url("bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    padding: 50px 50px 35px 80px;
+}
+
+.container {
+    display: grid;
+    width: 1440px;
+    color: white;
+    grid-template-columns: [col-start] 1fr [col-2] 1fr [col-end];
+    grid-template-rows: 90px 1fr 1fr;
+    grid-template-areas: 
+    "logo logo"
+    "illustration content"
+    "illustration icon";
+}
+
+.container .logo img {
+    height: 40px;
+    padding-left: 50px;
+    
+}
+
+.logo {
+    grid-area: logo;
+    margin-bottom: 20px;
+    
+}
+.illustration {
+    grid-area: illustration;
+}
+.illustration img {
+    padding-top: 40px;
+    padding-left: 50px;
+    width: 600px;
+    height: 400px;
+}
+.content {
+    grid-area: content;
+    padding-top: 50px;
+    padding-left: 0px;
+    
+}
+.icon {
+    grid-area: icon;
+}
+
+button {
+    padding: 15px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+  }
+
+.icon {
+
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    gap: 5px;
+
+}
+
+.icon i {
+    cursor: pointer;
+    margin-left: 1rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon i:hover {
+    transform: scale(0.9);
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+  }
