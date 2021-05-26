@@ -93,9 +93,9 @@ button:hover {
     border-color: hsl(300, 69%, 71%);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 375px) {
     body {
-        padding: 40px;
+        display: flex;
         width: 100%;
         align-items: flex-start;
     }
