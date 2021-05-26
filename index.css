@@ -104,7 +104,7 @@ button:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        grid-gap: 130px;
+        grid-gap: 50px;
     }
     .container .logo img {
         display: flex;
@@ -117,8 +117,8 @@ button:hover {
     }
     .content {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         flex-direction: column;
     }
     .content h1 {
