@@ -95,39 +95,55 @@ button:hover {
 
   @media (max-width: 768px) {
     body {
-        padding: 80px;
+        padding: 40px;
         width: 100%;
         align-items: flex-start;
     }
     .container { 
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-gap: 50px;
+        justify-content: start;
+        align-items: start;
+        grid-gap: 20px;
     }
     .container .logo img {
         display: flex;
         justify-content: start;
         align-items: start;
     }
-    .illustration img {
+    .illustration {
+        display: flex;
         height: 100%;
         width: 100%;
+        justify-content: end;
+        align-items: end;
+    }
+    .illustration img {
+        display: flex;
+        height: 300px;
+        width: 500px;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
     }
     .content {
         display: flex;
         justify-content: start;
-        align-items: start;
+        align-items: center;
         flex-direction: column;
     }
     .content h1 {
         line-height: 1.5;
     }
     .content p {
-        text-align:start;
-        max-width: 600px;
+        text-align:justify;
+        width: 100%;
         letter-spacing: 1.6px;
+    }
+    .content button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .icon {
         justify-content: center;
