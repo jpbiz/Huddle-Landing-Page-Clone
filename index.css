@@ -1,5 +1,6 @@
 body {
     background-image: url("bg-desktop.svg");
+    background-repeat: no-repeat;
     background-color: hsl(257, 40%, 49%);
     padding: 30px 50px 35px 60px;
 }
@@ -93,7 +94,7 @@ button:hover {
     border-color: hsl(300, 69%, 71%);
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     body {
         display: flex;
         width: 100%;
@@ -150,3 +151,61 @@ button:hover {
     }
 
     }
+
+    @media (max-width: 375px) {
+        body {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+        }
+        .container { 
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            grid-gap: 20px;
+        }
+        .container .logo img {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+        .illustration {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: end;
+            align-items: end;
+        }
+        .illustration img {
+            display: flex;
+            height: 300px;
+            width: 500px;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+        }
+        .content {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content h1 {
+            line-height: 1.5;
+        }
+        .content p {
+            text-align:justify;
+            width: 100%;
+            letter-spacing: 1.6px;
+        }
+        .content button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            justify-content: center;
+        }
+    
+        }
